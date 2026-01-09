@@ -158,10 +158,32 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 0;
-  color: #333;
+}
+
+/* Remove bullet points from participants list */
+.participants-list.no-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #d32f2f;
+  margin-left: 6px;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #b71c1c;
+}
 }
 
 .participants-none {
